@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.activitydiagramswimlane"
+		name="Activity Diagram Swimlane"
+		description="Create Activity Diagram with Swimlane"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.activitydiagramswimlane.ActivityDiagramSwimlanePlugin">
+	
+	<actionSets>
+		<actionSet id="com.vp.plugin.sample.activitydiagramswimlane.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.activitydiagramswimlane.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.activitydiagramswimlane.actionset1.GetPMLastModifyAction"
+					actionType="generalAction"
+      		name="Activity Diagram Swimlane"
+		      description="Create Activity Diagram with Swimlane"
+					style="normal"
+          icon="icon/swimlane_icon.png"
+          tooltip="Create Activity Diagram with Swimlane"
+					toolbarPath="com.vp.plugin.sample.activitydiagramswimlane.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.activitydiagramswimlane.actions.ActivityDiagramSwimlaneActionControl"/>
+			</action>
+			
+		</actionSet>
+	</actionSets>	
+</plugin>
